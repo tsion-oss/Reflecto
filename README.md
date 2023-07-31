@@ -1,16 +1,18 @@
-# Reflecto - Mood Journaling App
+<h1 align="center" style="color: #6a0dad;">Reflecto - Mood Journaling App</h1>
+<h2 align="center">Empowering Self-Reflection and Personal Growth</h2>
 
+<p align="center">
+  <img src="reflecto-logo.png" alt="Reflecto Logo" width="200" height="200">
+</p>
 
-
-## Overview
+<h2 align="center" style="color: #6a0dad;">Overview</h2>
 
 Reflecto is a user-friendly Mood Journaling app designed to empower users to track, analyze, and reflect on their emotions and mental well-being. With Reflecto, users can log their daily moods, write journal entries, and gain insights into their emotional patterns over time. The app aims to provide a safe space for self-reflection and personal growth.
 
-## Key Features
+<h2 align="center" style="color: #6a0dad;">Key Features</h2>
 
+<h3 align="center" style="color: #6a0dad;">MVP</h3>
 
-  ## MVP
-  
 - **Mood Tracking**: Record daily moods using a range of emotions or emojis to express how you feel.
 
 - **Journal Entries**: Write private journal entries to explore thoughts, experiences, and reflections.
@@ -19,8 +21,7 @@ Reflecto is a user-friendly Mood Journaling app designed to empower users to tra
 
 - **Mood Trends**: Visualize mood patterns over time through interactive graphs and charts.
 
-
- ## Stretch Goals
+<h3 align="center" style="color: #6a0dad;">Stretch Goals</h3>
 
 - **Reminders and Notifications**: Set personalized reminders to log entries and encourage regular reflection.
 
@@ -32,7 +33,7 @@ Reflecto is a user-friendly Mood Journaling app designed to empower users to tra
 
 - **Export and Backup**: Export mood journal data and create backups for peace of mind.
 
-## Tech Stack
+<h2 align="center" style="color: #6a0dad;">Tech Stack</h2>
 
 - **Front-end**: Built with React Native for a seamless and cross-platform user interface.
 
@@ -42,11 +43,11 @@ Reflecto is a user-friendly Mood Journaling app designed to empower users to tra
 
 - **Authentication**: JSON Web Tokens (JWT) for secure user authentication.
 
-- **Data Visualization**: 
+- **Data Visualization**: Chart.js for creating interactive graphs and visualizing mood trends.
 
-- **Deployment**:
+- **Deployment**: Heroku for hosting the backend server and AWS S3 for storing images.
 
-## Additional Ideas
+<h2 align="center" style="color: #6a0dad;">Additional Ideas</h2>
 
 - **Home Screen Widgets**: Create widgets for quick mood tracking directly from the device's home screen.
 
@@ -54,6 +55,4 @@ Reflecto is a user-friendly Mood Journaling app designed to empower users to tra
 
 - **Gratitude Journaling**: Include an optional feature for users to record things they are grateful for each day.
 
-
-
-We hope Reflecto helps you cultivate self-awareness and emotional well-being. Happy mood journaling and reflection! 
+<h2 align="center" style="color: #6a0dad;">We hope Reflecto helps you cultivate self-awareness and emotional well-being. Happy mood journaling and reflection!</h2>
