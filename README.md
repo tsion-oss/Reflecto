@@ -57,3 +57,4 @@ Reflecto is a user-friendly Mood Journaling app designed to empower users to tra
 
 
 We hope Reflecto helps you cultivate self-awareness and emotional well-being. Happy mood journaling and reflection! 
+can you make this repo more colorful and beautiful
