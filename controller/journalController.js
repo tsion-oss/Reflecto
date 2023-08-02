@@ -39,9 +39,9 @@ async function getJournalEntryById(req, res) {
 
 
 async function updateJournalEntryById(req, res) {
-  const { journalId } = req.params;
   try {
-    const updatedJournalEntry = await Journal.findByIdAndUpdate(journalId, req.body, { new: true });
+    let { id } = req.params;
+    const updatedJournalEntry = await Journal.findByIdAndUpdate(id, req.body, { new: true });
     if (!updatedJournalEntry) {
       return res.status(404).json({ error: 'Journal entry not found' });
     }
@@ -53,16 +53,16 @@ async function updateJournalEntryById(req, res) {
 
 
 async function deleteJournalEntryById(req, res) {
-  const { journalId } = req.params;
-  try {
-    const deletedJournalEntry = await Journal.findByIdAndDelete(journalId);
-    if (!deletedJournalEntry) {
-      return res.status(404).json({ error: 'Journal entry not found' });
+  try{
+    const { id } = req.params
+    const deleted = await Journal.findByIdAndDelete(id)
+    if (deleted) {
+        return res.status(200).send('Journal deleted')
     }
-    res.json({ message: 'Journal entry deleted successfully' });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
+    throw new Error('Journal not found')
+} catch (error) {
+    return res.status(500).send(error.message)
+}
 }
 
 module.exports = {
