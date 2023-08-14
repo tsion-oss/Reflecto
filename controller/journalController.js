@@ -41,7 +41,7 @@ async function getJournalEntryById(req, res) {
 async function updateJournalEntryById(req, res) {
   try {
     let { id } = req.params;
-    const updatedJournalEntry = await Journal.findByIdAndUpdate(id, req.body, { new: true });
+    const updatedJournalEntry = await Journal.findOne({ _id: id });
     if (!updatedJournalEntry) {
       return res.status(404).json({ error: 'Journal entry not found' });
     }
