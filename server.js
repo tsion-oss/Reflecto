@@ -30,7 +30,7 @@ app.listen(PORT, () => console.log(`Server Started on port ${PORT}`))
 
 
 
-app.post('api/register', async(req, res) => {  
+app.post('/api/register', async(req, res) => {  
     try{
             const { username, password } = req.body
             const hashedPassword = await bcrypt.hash(password, 10)
@@ -45,7 +45,7 @@ app.post('api/register', async(req, res) => {
     }
 
 })
-app.post('api/login', async (req, res) => {
+app.post('/api/login', async (req, res) => {
     try {
         const { username, password } = req.body;
 
