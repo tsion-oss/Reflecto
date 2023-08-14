@@ -25,9 +25,10 @@ async function getAllJournalEntries(req, res) {
 
 
 async function getJournalEntryById(req, res) {
-  const { journalId } = req.params;
+  const { id } = req.params;
+  console.log('updating journal entry with Id', id)
   try {
-    const journalEntry = await Journal.findById(journalId);
+    const journalEntry = await Journal.findById(id);
     if (!journalEntry) {
       return res.status(404).json({ error: 'Journal entry not found' });
     }
@@ -41,7 +42,8 @@ async function getJournalEntryById(req, res) {
 async function updateJournalEntryById(req, res) {
   try {
     let { id } = req.params;
-    const updatedJournalEntry = await Journal.findOne({ _id: id });
+   
+    const updatedJournalEntry = await Journal.findByIdAndUpdate(id, req.body, { new: true });
     if (!updatedJournalEntry) {
       return res.status(404).json({ error: 'Journal entry not found' });
     }
