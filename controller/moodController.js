@@ -25,9 +25,9 @@ async function getAllMoodEntries(req, res) {
 
 
 async function getMoodEntryById(req, res) {
-  const { moodId } = req.params;
+  const { id } = req.params;
   try {
-    const moodEntry = await Mood.findById(moodId);
+    const moodEntry = await Mood.findById(id);
     if (!moodEntry) {
       return res.status(404).json({ error: 'Mood entry not found' });
     }

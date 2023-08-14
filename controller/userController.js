@@ -22,9 +22,9 @@ async function getAllUsers(req, res) {
 }
 
 async function getUserById(req, res) {
-  const { userId } = req.params;
+  const { id } = req.params;
   try {
-    const user = await User.findById(userId).exec();
+    const user = await User.findById(id).exec();
 
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
