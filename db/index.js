@@ -1,3 +1,16 @@
+// const { MongoClient} = require('mongodb')
+
+// module.export = {
+//   connectToDb: () => {
+//     MongoClient.connect('mongodb://localhost:27017/reflecto')
+//     .then((client) => {
+//       dbConnection = client.db()
+//     })
+//   },
+//   getDb: () => {}
+// }
+
+
 const mongoose = require('mongoose')
 require('dotenv').config()
 
