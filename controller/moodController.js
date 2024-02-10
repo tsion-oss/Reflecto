@@ -1,4 +1,3 @@
-
 const { Mood } = require('../models/index.js');
 const db = require('../db')
 
